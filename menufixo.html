@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <a href="#" class="botao animation">  
+       <i class="fa fa-whatsapp"></i>
+     </a>
+     <a class="btn btn-neon" title="Download"><i class="icon icon-cloud-download"></i> Download</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 1</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            height: 5000px;
+            background-color: rgb(1, 16, 20);
+            color: white;
+            font: normal 15pt Arial;}
+
+        .img {
+            height: 30vh;
+            width: 99vw;
+            object-fit:cover;
+        }
+        button {
+            height: 100vh;
+            background:#1d2834;
+            border:2px solid ;
+            user-select: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+           }
+        .btn{
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            border-radius: 1000px;
+            color: #02dcc6;
+            transition: all 0.6s ease-in-out 0s;
+            box-shadow: inset 0 0 20px #08f2ee;
+        }
+        .btn:hover{
+            background: transparent;
+            color: #09baf5;
+            transform: scale(1.1);
+            box-shadow: 0 0 60px rgb(4, 250, 246);
+            cursor: grab;
+            border: 2px solid #37d3fa;}
+        
+        nav{
+            background-color: #031d1d;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+        }
+
+        nav .logo{
+            color: #e8f5f4;
+            float: left;
+            display: block;
+            padding: 4px 8px;
+            height: 40px;
+
+        }
+        nav .logo :hover{ 
+            background-color: rgb(214, 173, 230);
+        }
+        nav a{
+            color: #fff;
+            float: right;
+            text-decoration: none;
+            display: block;
+            padding: 14px 16px;
+        }
+        nav a:hover{ 
+            transition: 0.5s;
+            background-color: #09a7a2e3;
+            color: #333;
+        }
+        nav div {
+            height: 15px;
+        }
+        .animation 
+    {
+        animation: alerta 1.5s infinite;
+    }
+  /*botão zap*/
+  .botao {
+  background: #09a513;
+  color: white;
+  border: 1px solid #09a513;
+  border-radius: 70px;
+  box-shadow: 0 0 0 0 rgba(9, 165, 19, 0.50);
+  font-size: 30px;
+  text-align: center;
+  width: 60px;
+  height: 55px;
+  line-height: 55px;
+  text-decoration: none;
+  transition: background, padding 500ms ease-in-out; 
+  float: right;
+  position: fixed; bottom: 20px; right: 20px;
+}
+@keyframes alerta {
+  0% {
+    transform: scale();
+  }
+  70% {
+    transform: scale();
+    box-shadow: 0 0 0 50px rgba(69, 152, 27, 0);
+  }
+    100% {
+    transform: scale();
+    box-shadow: 0 0 0 0 rgba(69, 152, 27, 0);
+  }
+}
+/*botão download*/
+:root {
+
+--cor-azul: #3BF1F4;
+--cor-hover: #ffffff;
+
+}
+
+
+.btn {
+
+padding:0.2em 1em;
+border-radius:100px;
+display:inline-block;
+
+}
+
+.btn-neon {
+border:4px solid var(--cor-azul);
+position: fixed;bottom: 20px; left: 20px;
+text-transform: capitalize;
+text-decoration:none;
+color: var(--cor-azul);
+background-color: transparent;
+cursor: pointer;
+font-size: 2em;
+font-family: 'open_sansregular';
+transition:0.4s;
+text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.25em currentColor;
+box-shadow: inset 0 0 0.5em 0 var(--cor-azul), 0 0 0.5em 0 var(--cor-azul);
+}
+
+.btn-neon:hover {
+color: var(--cor-hover);
+border:4px solid var(--cor-hover);
+transition:0.4s;
+text-shadow: none;
+}
+
+.btn-neon:hover:after {
+opacity: 1;
+}
+
+.btn-neon:hover:before {
+opacity: 1;
+}
+
+.btn-neon:before, .btn-neon:after {
+content: "";
+position: absolute;
+transition: opacity 100ms linear;
+background-color: var(--cor-azul);
+}
+
+.btn-neon:before {
+top: 10%;
+left: 0%;
+width: 70%;
+height: 50%;
+transform: perspective(1em);
+filter: blur(1em);
+opacity: 0.5;
+}
+
+.btn-neon:after {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: -1;
+box-shadow: 0 0 0.75em 0.25em var(--cor-azul), 0 0 0.75em 1em var(--cor-azul);
+opacity: 0;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="file:///C:/Users/danie/OneDrive/%C3%81rea%20de%20Trabalho/cursojs/menufixo.html">Home</a>
+        </div>
+        <a href="file:///C:/Users/danie/OneDrive/%C3%81rea%20de%20Trabalho/cursojs/teste.html">Site 2</a>
+        <a href="https:/google.com.br">Google</a>
+        <a href="file:///C:/Users/danie/OneDrive/%C3%81rea%20de%20Trabalho/cursojs/formulario.html">Formulário</a>
+</nav>
+
+<img src="kkk.webp" class="img">
+<div class="cliq">
+<button class="btn">Clique</button>
+
+</body>
+</html>

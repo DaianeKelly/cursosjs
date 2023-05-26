@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <div class="box-formulario">        
+        
+        <div class="formulario">
+            
+            <div class="title-form alt">
+              <h1>Contato
+                <p class="subtitle">Preencha o formulário da Day</p>
+              </h1>
+            </div>
+
+            <form action="#" method="post">
+                                            
+                <span>
+                    <input class="width-slide" id="nome" type="text" placeholder="Nome" />
+                    <label for="nome"> <i class="icon icon-user-1"></i> </label>
+                </span>
+
+                <span>
+                    <input class="width-slide" id="email" type="text" placeholder="E-mail" />
+                    <label for="email"> <i class="icon icon-mail-1"></i> </label>
+                </span>
+
+                <span>
+                    <input class="width-slide" id="assunto" type="text" placeholder="Assunto" />
+                    <label for="assunto"> <i class="icon icon-info"></i> </label>
+                </span>
+
+                <span>
+                    <textarea class="width-slide" id="mensagem" name="mensagem" type="text" rows="3" placeholder="Mensagem" required=""></textarea>
+                    <label for="mensagem"> <i class="icon icon-comment"></i> </label>
+                </span>
+                
+                <span>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </span>
+
+            </form>
+
+        </div>
+
+    </div><!--Box Formulario-->  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style> 
+  .title-form h1 {
+  
+  text-transform: capitalize;
+  font-size:48px;
+  color: #ffffff;
+  margin-bottom: 50px;
+
+}
+
+.title-form h1:after {
+
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    width: 170px;
+    height: 4px;
+    content: "";
+    background-color: #3c9edb;
+
+}
+
+.title-form h1 .subtitle {
+
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 3em;
+  padding-left: 0.25em;
+  color: #fff;
+  padding-bottom: 10px;
+
+}
+
+.alt h1 {
+  text-align:center;
+}
+
+.alt h1:after {
+  left:50%; margin-left:-30px;
+}
+
+.box-formulario {
+
+    width: 100%; /*ou*/
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #042025;
+    padding: 180px;
+
+}
+
+.formulario {
+
+    width: 700px;
+    background: #042025;
+    padding: 60px 10%;
+    text-align: center;
+
+}
+.formulario span {
+  position: relative;
+  display: flex;
+  margin: 30px 100px;
+}
+
+.width-slide {
+
+  display: inline-block;
+  width: 100%;
+  padding: 0px 0 20px 20px;
+  font-family: "Open Sans", sans;
+  font-weight: 400;
+  color: #4c4c4c;
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  outline: 0;
+  text-indent: 700px;
+  transition: all .3s ease-in-out;
+
+}
+
+.width-slide::-webkit-input-placeholder {
+  color: #ffffff;
+  text-indent: 0;
+  font-weight: 300;
+}
+.width-slide + label {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 50px;
+  height: 100%;
+  padding: 10px 15px;
+  text-shadow: 0 1px 0 rgba(23, 61, 61, 0.4);
+  background: #118c9c;
+  color: #ffffff;
+  transition: all .3s ease-in-out;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.width-slide:focus,
+.width-slide:active {
+  color: #0f0f0f;
+  text-indent: 2px;
+  background: #fff;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 50px;
+
+}
+.width-slide:focus::-webkit-input-placeholder,
+.width-slide:active::-webkit-input-placeholder {
+  color: #9f9b9b;
+}
+
+.width-slide:focus + label,
+.width-slide:active + label {
+  transform: translateX(-78%);
+}
+
+.btn-submit {
+
+    color: #fff;
+    background: #056669;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    padding: 10px 0;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 100%;
+
+}
+
+.btn-submit:hover {
+ 
+    background-color: #071e65;
+    color: #fff;
+
+}
+ 
+    </style>
+</head>
+
+<body> 
+    
+</body>
+</html>
