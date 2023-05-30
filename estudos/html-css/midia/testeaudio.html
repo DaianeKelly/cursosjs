@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste áudio</title>
+  </head>
+  <body>
+    <h1>Teste de áudio</h1>
+    <p>Reproduzir áudio em HTML5</p>
+    <audio src="eletronica.mp3" controls autoplay loop></audio>
+    <audio preload="metadata" autoplay controls>
+      <source src="eletronica.mp3" type="audio/mpeg" />
+      <source src="eletronica.ogg" type="audio.ogg" />
+      <source src="eletronica.wav" type="audio.wav" />
+      <p>
+        Seu navegador não suporta áudio
+        <a
+          href="eletronica.mp3"
+          download="eletronica.mp3"
+          type="audio/mpeg"
+        ></a>
+      </p>
+    </audio>
+  </body>
+</html>
