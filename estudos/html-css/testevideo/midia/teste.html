@@ -6,15 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="youtuu.webp" type="image/x-icon" />
     <title>Teste vídeo</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          45deg,
+          #590d22,
+          #800f2f,
+          #a4133c,
+          #c9184a,
+          #ff4d6d,
+          #ff97b7,
+          #ffacc5,
+          #ffcad4
+        );
+      }
+      h1 {
+        font-size: 45px;
+      }
+    </style>
   </head>
   <body>
     <h1>Inserindo vídeos hospedados localmente</h1>
     <p>Esse vídeo está funcionando no meu próprio servidor</p>
-    <video controls poster="cafe.jpeg" width="180">
+    <video controls autoplay loop poster="cafe.jpeg" width="300" height="300">
       <source src="Meu-Video.mp4" type="video/mp4" />
       <source src="videowebm.webm" type="video/webm" />
       <source src="videomkv.mkv" type="video/mkv" />
       <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
     </video>
+    <h1>Animation vídeo reel</h1>
+    <a
+      href="file:///C:/Users/daiane/Desktop/cursos/estudos/html-css/testevideo/midia/teste02.html"
+      target="_blank"
+    >
+      <video
+        src="https://www.youtube.com/embed/FdE5G95B7Mg"
+        controls
+        poster="poster.png"
+        height="170"
+        width="300"
+      ></video>
+    </a>
+    <h1>Inserindo vídeo do youtube</h1>
+    <iframe
+      width="500"
+      height="315"
+      src="https://www.youtube.com/embed/FdE5G95B7Mg"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </body>
 </html>
