@@ -6,6 +6,18 @@
 body {
   background-image: linear-gradient(to right, #bf1542, #d91e63, #f22987);
 }
+h1 {
+  color: #33a65b;
+  text-align: center;
+  text-shadow: 1px 1px 2px #143f23d0;
+}
+h2 {
+  color: #d9259a;
+}
+p {
+  text-align: justify;
+}
+
 main {
   background-color: white;
   border-radius: 10px;
