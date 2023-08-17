@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somando números</title>
+  </head>
+  <style>
+    h1 {
+      font-size: 1.4em;
+      background-image: linear-gradient(
+        to right,
+        rgb(236, 72, 99),
+        transparent
+      );
+      border-radius: 15px;
+      width: 400px;
+      padding: 8px;
+    }
+    body {
+      font: normal 18pt Arial;
+      margin: auto;
+      width: 800px;
+    }
+    input {
+      font: normal 18pt Arial;
+      width: 90px;
+      padding: 3px;
+      background-color: rgba(128, 128, 128, 0.164);
+      border-color: rgb(143, 10, 65);
+      border-radius: 10px;
+    }
+    input#somar:hover {
+      background-color: rgba(207, 72, 106, 0.507);
+      box-shadow: 3px 3px 3px 3px rgba(233, 86, 147, 0.253);
+      cursor: pointer;
+    }
+    div#res {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <h1>Digite o seu nome</h1>
+    <input type="text" name="name" id="name" />
+    <h1>Somando valores</h1>
+
+    <input type="number" name="txtn1" id="txtn1" /> +
+    <input type="number" name="txtn2" id="txtn2" />
+    <input type="button" value="Somar" id="somar" onclick="somar()" />
+    <div id="res">Resultado:</div>
+  </body>
+
+  <script>
+    function somar() {
+      var nome = document.querySelector("#name");
+      var in1 = window.document.querySelector("input#txtn1");
+      var in2 = window.document.querySelector("input#txtn2");
+      var res = window.document.querySelector("div#res");
+      console.log(nome);
+      var result = +in1.value + +in2.value;
+      res.innerHTML = `Olá, ${nome.value}. A soma entre ${in1.value} e ${in2.value} é <strong>${result}</strong>!`;
+    }
+  </script>
+</html>
