@@ -5,23 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DETRAN</title>
   </head>
+  <style>
+    body {
+      background-image: linear-gradient(
+        45deg,
+        rgb(5, 36, 70),
+        rgb(26, 75, 128)
+      );
+
+      background-attachment: fixed;
+      height: 100vh;
+    }
+    main {
+      margin: auto;
+      padding: 15px;
+      height: 50vh;
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.952);
+      background-attachment: fixed;
+      box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.356);
+      background-position: left top;
+      padding: 80px;
+      border-radius: 10px;
+    }
+    main > p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1 {
+      font-size: 2.3em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.418);
+    }
+    input {
+      border-color: rgb(4, 44, 88);
+      border-radius: 10px;
+    }
+    h1,
+    input,
+    button {
+      padding: 8px;
+      margin: auto;
+      max-width: 800px;
+      position: static;
+    }
+    input#botao {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    input#botao:hover {
+      background-color: rgba(4, 51, 102, 0.342);
+      cursor: pointer;
+    }
+    span {
+      color: rgb(4, 44, 88);
+    }
+  </style>
   <body>
-    <h1>Sistemas de multas</h1>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" /> Km/h.
-    <input type="button" value="Verificar" onclick="calcular()" />
-    <div id="res"></div>
+    <main>
+      <h1><span>Sis</span>tema de multas</h1>
+      <p>Qual é o seu nome?</p>
+      <input type="text" name="nome" id="nome" /> <br />
+      <p>Velocidade do carro:</p>
+      <input type="number" name="txtvel" id="txtvel" /> Km/h.
+      <input type="button" value="Verificar" id="botao" onclick="calcular()" />
+      <div id="res"></div>
+    </main>
   </body>
   <script>
     function calcular() {
+      var nome = window.document.querySelector("input#nome");
       var txtv = window.document.querySelector("input#txtvel");
       var res = window.document.querySelector("div#res");
       var vel = Number(txtv.value);
       res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong> Km/h.</p>`;
       if (vel > 60) {
-        res.innerHTML +=
-          "<p>Você está <strong>MULTADO</strong> por excesso de velocidade!</p>";
+        res.innerHTML += `<p>Olá, ${nome.value}! Você está <strong>MULTADO</strong> por excesso de velocidade!</p>`;
+        res.style.color = "red";
+      } else {
+        res.innerHTML += `<p>Olá, ${nome.value}! Dirija sempre com cinto de segurança!</p>`;
+        res.style.color = "black";
       }
-      res.innerHTML += "<p>Dirija sempre com cinto de segurança!</p>";
     }
   </script>
 </html>
