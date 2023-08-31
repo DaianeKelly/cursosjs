@@ -18,7 +18,7 @@ if (hora < 12) {
 }
 var hoje = new Date();
 var diadasemana = hoje.getDay;
-
+//----------------------------------------------------------------
 switch (diadasemana) {
   case 0:
     console.log("Domingo");

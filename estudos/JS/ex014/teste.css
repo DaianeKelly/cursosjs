@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(25, 25, 78);
+  font: normal 15pt Arial;
+  height: 100vh;
+}
+header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+section {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+  margin: 0px 100px 0px 100px;
+  padding: 30px;
+  max-width: 400px;
+  margin: auto;
+}
+div {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 10px;
+}
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
