@@ -1,0 +1,42 @@
+body {
+  background-color: rgba(53, 5, 82, 0.911);
+  font: normal 15pt Arial;
+  height: 100vh;
+}
+header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+section {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+  margin: 0px 90px 0px 90px;
+  padding: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+div {
+  padding: 30px;
+  margin: 10px;
+}
+input {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1.3px solid rgb(11, 11, 163);
+}
+input#verificar:hover {
+  background-color: rgba(14, 14, 90, 0.459);
+  cursor: pointer;
+}
+div#res {
+  padding-top: 5px;
+}
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
